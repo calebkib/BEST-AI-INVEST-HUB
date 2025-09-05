@@ -1,37 +1,245 @@
-<!DOCTYPE html><!DOCTYPE html>
-<html>
-<head>
-  <title>AI Invest Hub</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <h1>Welcome to AI Invest Hub</h1>
-  <p>Empowering smart investments with AI insights.</p>
-
-  <button onclick="alert('More features coming soon!')">Learn More</button>
-
-  <hr>
-
-  <h2>Contact Me</h2>
-  <p>Email: <a href="mailto:calebkibetmutai@gmail.com">calebkibetmutai@gmail.com</a></p>
-  <p>Phone: <a href="tel:+254728543803">0728543803</a></p>
-  <p>Location: Nairobi, Kenya</p>
-
-</body>
-</html>
-
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>My First Website</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Lovella — Dating Made Simple</title>
+  <meta name="description" content="Lovella is a modern dating site built to connect genuine people looking for love, friendship, and companionship." />
+  <meta property="og:title" content="Lovella — Dating Made Simple" />
+  <meta property="og:description" content="Find love, friendship, and meaningful connections on Lovella." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="/lovella-og.png" />
+  <meta name="theme-color" content="#ec4899" />
+  <style>
+    :root{
+      --bg:#1a0b17; --card:#241021; --muted:#d6b3c9; --text:#fff5f9; --brand:#ec4899; --brand-2:#f472b6; --ring: 0 0 0 4px color-mix(in oklab, var(--brand) 40%, transparent);
+    }
+    *{box-sizing:border-box}
+    body{margin:0;font:16px/1.6 system-ui, sans-serif;color:var(--text);background:radial-gradient(1000px 500px at 20% -10%, #311227, transparent),radial-gradient(1000px 500px at 80% -10%, #2a0f22, transparent),var(--bg);}    
+    a{color:inherit;text-decoration:none}
+    .container{max-width:1100px;margin-inline:auto;padding:24px}
+    .btn{display:inline-flex;align-items:center;gap:10px;padding:10px 14px;border-radius:14px;border:1px solid #3a1f33;background:linear-gradient(180deg, rgba(255,255,255,.08), rgba(255,255,255,0));color:var(--text);font-weight:600;cursor:pointer;font-size:14px}
+    .btn.primary{background:linear-gradient(90deg,var(--brand),var(--brand-2));border-color:transparent;color:#2a0212;}
+    header{position:sticky;top:0;backdrop-filter:saturate(140%) blur(8px);background:rgba(26,11,23,.8);border-bottom:1px solid rgba(255,255,255,.06);z-index:50}
+    nav{display:flex;align-items:center;justify-content:space-between;}
+    .logo{font-weight:800;font-size:20px;color:var(--brand)}
+    .nav-links{display:flex;gap:14px}
+
+    .hero{padding:80px 0;text-align:center}
+    .hero h1{font-size:clamp(34px,6vw,60px);line-height:1.1;margin:.3em 0;color:var(--brand)}
+    .hero p{max-width:60ch;margin-inline:auto;color:#ffd9eb}
+    .hero-cta{margin-top:20px;display:flex;justify-content:center;gap:12px;flex-wrap:wrap}
+
+    section{padding:60px 0;border-top:1px solid rgba(255,255,255,.08)}
+    h2{font-size:clamp(24px,3.5vw,38px);margin-bottom:10px;text-align:center;color:var(--brand)}
+    .card{background:var(--card);border:1px solid rgba(255,255,255,.1);padding:20px;border-radius:18px;display:flex;flex-direction:column;align-items:center;text-align:center}
+    .grid{display:grid;gap:20px}
+    .features{grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
+    .testimonials{grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
+    .profiles{grid-template-columns:repeat(auto-fit,minmax(220px,1fr))}
+    form{display:grid;gap:12px}
+    input, textarea, select{padding:12px 14px;border-radius:14px;border:1px solid #40213a;background:#1f0b1b;color:var(--text)}
+    input:focus, textarea:focus, select:focus{outline:none;box-shadow:var(--ring);border-color:var(--brand)}
+    footer{padding:30px 0;text-align:center;color:var(--muted)}
+    .profile-pic{width:100%;border-radius:14px;object-fit:cover;max-height:260px}
+    .profile-name{font-weight:700;margin:10px 0 4px}
+    .profile-age{color:var(--muted);font-size:14px;margin-bottom:6px}
+    .filters{display:flex;gap:10px;flex-wrap:wrap;justify-content:center;margin-bottom:20px}
+
+    /* Modal */
+    .modal{position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,.7);display:none;align-items:center;justify-content:center;z-index:100}
+    .modal-content{background:var(--card);padding:30px;border-radius:18px;max-width:400px;width:90%;text-align:left}
+    .modal h3{margin-top:0;color:var(--brand)}
+    .close-btn{float:right;cursor:pointer;font-size:20px;color:var(--muted)}
+  </style>
 </head>
 <body>
-  <h1>Welcome to My Website!</h1>
-  <p>This is a sample page built using VS Code in the browser.</p>
-  <button onclick="sayHello()">Click Me</button>
+  <header>
+    <div class="container">
+      <nav>
+        <div class="logo">❤️ Lovella</div>
+        <div class="nav-links">
+          <a href="#features">Features</a>
+          <a href="#profiles">Profiles</a>
+          <a href="#stories">Love Stories</a>
+          <a href="#join">Join</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </nav>
+    </div>
+  </header>
 
-  <script src="script.js"></script>
+  <main>
+    <!-- Hero -->
+    <section class="hero">
+      <div class="container">
+        <h1>Find Love. Make Connections. Start Today.</h1>
+        <p>Lovella brings singles together in a safe, modern, and heartfelt way. Whether you’re looking for friendship, companionship, or lifelong love—your story starts here.</p>
+        <div class="hero-cta">
+          <a class="btn primary" href="#join">Join Free</a>
+          <a class="btn" href="#features">How it works</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Features -->
+    <section id="features">
+      <div class="container">
+        <h2>Why Choose Lovella?</h2>
+        <div class="grid features">
+          <div class="card"><h3>Smart Matching</h3><p>We connect you with people who truly share your values and lifestyle.</p></div>
+          <div class="card"><h3>Safe & Secure</h3><p>Profiles are verified and monitored for your safety.</p></div>
+          <div class="card"><h3>Real Connections</h3><p>We focus on authentic stories and meaningful conversations.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Singles -->
+    <section id="featured">
+      <div class="container">
+        <h2>Featured Singles</h2>
+        <div class="grid profiles">
+          <!-- Example card -->
+          <div class="card">
+            <img class="profile-pic" src="https://randomuser.me/api/portraits/men/21.jpg" alt="Michael" />
+            <div class="profile-name">Michael</div>
+            <div class="profile-age">40 • Berlin, Germany</div>
+            <p>Entrepreneur, enjoys wine tasting and cultural travel.</p>
+            <button class="btn primary connect-btn">Request to Connect</button>
+          </div>
+          <!-- Add the rest of your 5 more featured profiles here -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Members -->
+    <section id="profiles">
+      <div class="container">
+        <h2>Meet Some of Our Members</h2>
+        <div class="filters">
+          <select id="locationFilter">
+            <option value="all">All Locations</option>
+            <option value="Kenya">Kenya</option>
+            <option value="South Africa">South Africa</option>
+            <option value="USA">USA</option>
+            <option value="UK">UK</option>
+          </select>
+          <select id="ageFilter">
+            <option value="all">All Ages</option>
+            <option value="20-29">20–29</option>
+            <option value="30-39">30–39</option>
+            <option value="40+">40+</option>
+          </select>
+        </div>
+        <div class="grid profiles" id="profilesGrid">
+          <div class="card" data-location="Kenya" data-age="28">
+            <img class="profile-pic" src="https://randomuser.me/api/portraits/women/65.jpg" alt="Anna" />
+            <div class="profile-name">Anna</div>
+            <div class="profile-age">28 • Nairobi, Kenya</div>
+            <p>Loves travel, photography, and meaningful conversations.</p>
+            <button class="btn primary connect-btn">Request to Connect</button>
+          </div>
+          <!-- Add more profiles as needed -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Success Stories -->
+    <section id="stories">
+      <div class="container">
+        <h2>Success Stories</h2>
+        <div class="grid testimonials">
+          <div class="card"><blockquote>“I met the love of my life here. Now we’re happily married.”</blockquote><p>— Grace & Daniel, Kenya</p></div>
+          <div class="card"><blockquote>“Lovella gave me real matches, not endless swipes.”</blockquote><p>— Sarah, South Africa</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Join -->
+    <section id="join">
+      <div class="container">
+        <h2>Join Lovella Today</h2>
+        <p style="text-align:center;max-width:60ch;margin-inline:auto">Creating an account is free and takes just a minute.</p>
+        <div style="text-align:center;margin-top:20px">
+          <a class="btn primary" href="#contact">Create My Profile</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact">
+      <div class="container">
+        <h2>Contact Us</h2>
+        <form action="https://formspree.io/f/yourFormID" method="POST" enctype="multipart/form-data">
+          <input type="text" name="name" placeholder="Your Name" required />
+          <input type="email" name="email" placeholder="Your Email" required />
+          <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+          <input type="file" name="attachment" accept="image/*" />
+          <button class="btn primary" type="submit">Send</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>© <span id="year"></span> Lovella. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Modal -->
+  <div id="connectModal" class="modal">
+    <div class="modal-content">
+      <span class="close-btn" id="closeModal">&times;</span>
+      <h3>Request to Connect</h3>
+      <form action="https://formspree.io/f/yourFormID" method="POST" enctype="multipart/form-data">
+        <input type="text" name="name" placeholder="Your Name" required />
+        <input type="email" name="email" placeholder="Your Email" required />
+        <textarea name="message" rows="4" placeholder="Write your message..." required></textarea>
+        <input type="file" name="attachment" accept="image/*" />
+        <button class="btn primary" type="submit">Send Request</button>
+      </form>
+    </div>
+  </div>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Filters
+    const locationFilter = document.getElementById('locationFilter');
+    const ageFilter = document.getElementById('ageFilter');
+    const profiles = document.querySelectorAll('#profilesGrid .card');
+
+    function filterProfiles(){
+      const loc = locationFilter.value;
+      const age = ageFilter.value;
+      profiles.forEach(card => {
+        const profileLoc = card.getAttribute('data-location');
+        const profileAge = parseInt(card.getAttribute('data-age'));
+        let show = true;
+        if(loc !== 'all' && profileLoc !== loc) show = false;
+        if(age !== 'all'){
+          if(age === '20-29' && !(profileAge >= 20 && profileAge <= 29)) show = false;
+          if(age === '30-39' && !(profileAge >= 30 && profileAge <= 39)) show = false;
+          if(age === '40+' && !(profileAge >= 40)) show = false;
+        }
+        card.style.display = show ? 'block' : 'none';
+      });
+    }
+    locationFilter.addEventListener('change', filterProfiles);
+    ageFilter.addEventListener('change', filterProfiles);
+
+    // Modal
+    const modal = document.getElementById('connectModal');
+    const closeModal = document.getElementById('closeModal');
+    const connectBtns = document.querySelectorAll('.connect-btn');
+
+    connectBtns.forEach(btn=>{
+      btn.addEventListener('click', ()=>{ modal.style.display='flex'; });
+    });
+    closeModal.addEventListener('click', ()=>{ modal.style.display='none'; });
+    window.addEventListener('click', e=>{ if(e.target==modal) modal.style.display='none'; });
+  </script>
 </body>
 </html>
+
