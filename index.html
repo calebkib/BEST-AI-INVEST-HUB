@@ -3,121 +3,108 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Lovella — International Dating</title>
-  <meta name="description" content="Lovella is a modern dating platform founded in the USA, connecting men and women worldwide with trust, safety, and love." />
+  <title>Lovella — Dating Made Simple</title>
   <style>
-    :root {
-      --bg:#1a0b17; --card:#241021; --muted:#d6b3c9; --text:#fff5f9; --brand:#ec4899; --brand-2:#f472b6;
-    }
-    body {margin:0;font:16px/1.6 system-ui, sans-serif;color:var(--text);background:var(--bg);}
-    .container{max-width:1100px;margin:auto;padding:24px}
-    h2{color:var(--brand);text-align:center}
-    .grid{display:grid;gap:20px}
-    .profiles{grid-template-columns:repeat(auto-fit,minmax(220px,1fr))}
-    .card{background:var(--card);padding:18px;border-radius:16px;text-align:center}
-    .profile-pic{width:100%;border-radius:14px;max-height:250px;object-fit:cover}
-    .profile-name{font-weight:700;margin-top:10px}
-    .profile-age{font-size:14px;color:var(--muted)}
-    .btn{display:inline-block;margin-top:10px;padding:10px 14px;border-radius:12px;font-weight:bold;text-decoration:none;color:#fff;background:linear-gradient(90deg,var(--brand),var(--brand-2))}
-    .whatsapp-btn{display:block;margin-top:12px;padding:16px;border-radius:16px;font-size:18px;text-align:center;background:linear-gradient(90deg,#25D366,#128C7E);color:white;text-decoration:none;font-weight:bold}
-    footer{padding:20px;text-align:center;color:var(--muted)}
+    body {font-family: Arial, sans-serif; margin:0; padding:0; background:#f9f3f7; color:#333;}
+    header, footer {background:#ec4899; color:#fff; text-align:center; padding:20px;}
+    h1, h2 {color:#ec4899;}
+    .container {max-width:1100px; margin:0 auto; padding:20px;}
+    .profiles {display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:20px;}
+    .card {background:#fff; border:1px solid #ddd; border-radius:10px; padding:15px; text-align:center;}
+    .profile-pic {width:100%; border-radius:10px; height:260px; object-fit:cover;}
+    .profile-name {font-weight:bold; margin:10px 0 5px;}
+    .profile-age {color:#666; margin-bottom:10px;}
+    .btn {display:inline-block; padding:10px 16px; background:#ec4899; color:#fff; border:none; border-radius:8px; text-decoration:none; cursor:pointer; font-weight:bold;}
+    .btn:hover {background:#d83687;}
+    .feedback-grid {display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:20px; margin-top:20px;}
+    blockquote {font-style:italic; color:#555;}
   </style>
 </head>
 <body>
+  <header>
+    <h1>❤️ Lovella</h1>
+    <p>International Singles Connecting Hearts</p>
+  </header>
 
-  <!-- Hero -->
-  <section class="hero container">
-    <h1 style="color:var(--brand)">❤️ Lovella International Dating</h1>
-    <p>Find love, companionship, and long-lasting relationships across borders. Trusted worldwide.</p>
-  </section>
+  <main class="container">
 
-  <!-- Profiles -->
-  <section id="profiles" class="container">
-    <h2>Meet Our Members</h2>
-    <div class="grid profiles">
+    <!-- About Section -->
+    <section>
+      <h2>About Lovella</h2>
+      <p>
+        Lovella is a modern dating organization founded in the United States with the mission to connect real people seeking love, companionship, and marriage. Since our founding, we have dedicated ourselves to building bridges between continents, making it easier for men and women from Africa and the Western world to find meaningful partners. Our platform is designed to remove the unnecessary complications of online dating by focusing on genuine connections, safety, and affordable access to love. 
+      </p>
+      <p>
+        Lovella has proudly connected singles from across Africa — including Kenya, South Africa, Nigeria, Ghana, and Uganda — with men and women from the USA, UK, Europe, and beyond. We recognize that love knows no borders, and our success stories prove that cultural and geographic differences can be overcome with honesty, trust, and communication. Whether it’s a Kenyan woman meeting her soulmate in Texas, or a South African gentleman finding lasting companionship with a European lady, Lovella continues to make dreams come true. 
+      </p>
+      <p>
+        To make the experience simple, we provide full assistance through WhatsApp and email chat support. Our assistant managers are always available to guide new members, explain how to connect, and ensure that your journey is safe and enjoyable. Lovella also offers easy, secure payment options through PayPal and cryptocurrency, ensuring flexibility for members around the world. With the lowest connection fee and a transparent process, members feel safe and confident in their journey towards love. 
+      </p>
+      <p>
+        Thousands of singles have already found happiness here, with many couples sharing stories of engagements, marriages, visa approvals, and successful relocations abroad. At Lovella, we believe in celebrating love, breaking barriers, and helping people write their own happy endings. 
+      </p>
+    </section>
 
-      <div class="card" data-location="USA" data-age="47">
-        <img class="profile-pic" src="https://randomuser.me/api/portraits/men/65.jpg" alt="Robert, USA" />
-        <div class="profile-name">Robert</div>
-        <div class="profile-age">47 • Texas, USA</div>
-        <p>Business owner, enjoys golf and family travel.</p>
-        <a class="btn" href="https://wa.me/18705490483?text=Hello%2C%20I%20am%20interested%20in%20connecting%20on%20Lovella" target="_blank">💬 Chat Assistant</a>
-        <a class="whatsapp-btn" href="https://wa.me/18705490483?text=Hello%2C%20I%20saw%20Robert%27s%20profile%20on%20Lovella%20and%20would%20like%20to%20connect" target="_blank">📱 Chat on WhatsApp</a>
+    <!-- Profiles -->
+    <section>
+      <h2>Meet Mature Singles</h2>
+      <div class="profiles">
+        <div class="card">
+          <img class="profile-pic" src="https://randomuser.me/api/portraits/men/55.jpg" alt="John" />
+          <div class="profile-name">John</div>
+          <div class="profile-age">46 • Texas, USA</div>
+          <p>Businessman, enjoys traveling and golf.</p>
+          <a class="btn" href="https://wa.me/18705490483">Chat Assistant</a>
+        </div>
+        <div class="card">
+          <img class="profile-pic" src="https://randomuser.me/api/portraits/women/58.jpg" alt="Mary" />
+          <div class="profile-name">Mary</div>
+          <div class="profile-age">47 • London, UK</div>
+          <p>Artist, loves painting and charity work.</p>
+          <a class="btn" href="https://wa.me/18705490483">Chat Assistant</a>
+        </div>
+        <div class="card">
+          <img class="profile-pic" src="https://randomuser.me/api/portraits/men/62.jpg" alt="David" />
+          <div class="profile-name">David</div>
+          <div class="profile-age">52 • Beijing, China</div>
+          <p>Engineer, values culture and family traditions.</p>
+          <a class="btn" href="https://wa.me/18705490483">Chat Assistant</a>
+        </div>
+        <div class="card">
+          <img class="profile-pic" src="https://randomuser.me/api/portraits/women/61.jpg" alt="Susan" />
+          <div class="profile-name">Susan</div>
+          <div class="profile-age">49 • New York, USA</div>
+          <p>Healthcare professional, enjoys volunteering and reading.</p>
+          <a class="btn" href="https://wa.me/18705490483">Chat Assistant</a>
+        </div>
       </div>
+    </section>
 
-      <div class="card" data-location="UK" data-age="52">
-        <img class="profile-pic" src="https://randomuser.me/api/portraits/men/71.jpg" alt="David, UK" />
-        <div class="profile-name">David</div>
-        <div class="profile-age">52 • London, UK</div>
-        <p>Engineer, loves history, culture, and travel.</p>
-        <a class="btn" href="https://wa.me/18705490483?text=Hello%2C%20I%20am%20interested%20in%20connecting%20on%20Lovella" target="_blank">💬 Chat Assistant</a>
-        <a class="whatsapp-btn" href="https://wa.me/18705490483?text=Hello%2C%20I%20saw%20David%27s%20profile%20on%20Lovella%20and%20would%20like%20to%20connect" target="_blank">📱 Chat on WhatsApp</a>
+    <!-- Feedback Section -->
+    <section>
+      <h2>What Our Members Say</h2>
+      <div class="feedback-grid">
+        <div class="card"><blockquote>“I met the love of my life through Lovella. Thanks to the assistant manager on WhatsApp who guided me step by step!”</blockquote><p>— Sarah, Texas, USA (+1)</p></div>
+        <div class="card"><blockquote>“Lovella is truly legit. I connected with a wonderful lady in Kenya, and now we’re engaged.”</blockquote><p>— Mark, London, UK (+44)</p></div>
+        <div class="card"><blockquote>“Thanks to Lovella’s management, I met a white man who later processed my visa. I’m now living in the US.”</blockquote><p>— Grace, Nairobi, Kenya (+254)</p></div>
+        <div class="card"><blockquote>“The lowest connection fee and real results. Lovella is the best platform.”</blockquote><p>— John, Cape Town, South Africa (+27)</p></div>
+        <div class="card"><blockquote>“The assistant was very helpful. Within days, I met my partner. Thank you Lovella!”</blockquote><p>— Priya, Mumbai, India (+91)</p></div>
+        <div class="card"><blockquote>“I was skeptical at first, but Lovella proved me wrong. Genuine connections only.”</blockquote><p>— David, Beijing, China (+86)</p></div>
+        <div class="card"><blockquote>“I met a beautiful Kenyan woman here, and we’re planning our wedding.”</blockquote><p>— Mike, Texas, USA (+1)</p></div>
+        <div class="card"><blockquote>“Thanks Lovella, I found a partner who truly cares for me. Safe and trusted.”</blockquote><p>— Amina, Accra, Ghana (+233)</p></div>
+        <div class="card"><blockquote>“The assistant manager deserves praise! He connected me to my soulmate on WhatsApp.”</blockquote><p>— Catherine, Uganda (+256)</p></div>
+        <div class="card"><blockquote>“Payment was simple with PayPal. Lovella made everything stress-free.”</blockquote><p>— James, Canada (+1)</p></div>
       </div>
+    </section>
 
-      <div class="card" data-location="China" data-age="58">
-        <img class="profile-pic" src="https://randomuser.me/api/portraits/men/67.jpg" alt="Chen, China" />
-        <div class="profile-name">Chen</div>
-        <div class="profile-age">58 • Beijing, China</div>
-        <p>Retired teacher, enjoys reading and cooking.</p>
-        <a class="btn" href="https://wa.me/18705490483?text=Hello%2C%20I%20am%20interested%20in%20connecting%20on%20Lovella" target="_blank">💬 Chat Assistant</a>
-        <a class="whatsapp-btn" href="https://wa.me/18705490483?text=Hello%2C%20I%20saw%20Chen%27s%20profile%20on%20Lovella%20and%20would%20like%20to%20connect" target="_blank">📱 Chat on WhatsApp</a>
-      </div>
-
-      <div class="card" data-location="USA" data-age="61">
-        <img class="profile-pic" src="https://randomuser.me/api/portraits/men/77.jpg" alt="James, USA" />
-        <div class="profile-name">James</div>
-        <div class="profile-age">61 • Florida, USA</div>
-        <p>Musician, loves the beach and outdoor lifestyle.</p>
-        <a class="btn" href="https://wa.me/18705490483?text=Hello%2C%20I%20am%20interested%20in%20connecting%20on%20Lovella" target="_blank">💬 Chat Assistant</a>
-        <a class="whatsapp-btn" href="https://wa.me/18705490483?text=Hello%2C%20I%20saw%20James%27s%20profile%20on%20Lovella%20and%20would%20like%20to%20connect" target="_blank">📱 Chat on WhatsApp</a>
-      </div>
-
-      <div class="card" data-location="USA" data-age="46">
-        <img class="profile-pic" src="https://randomuser.me/api/portraits/women/65.jpg" alt="Linda, USA" />
-        <div class="profile-name">Linda</div>
-        <div class="profile-age">46 • California, USA</div>
-        <p>Artist, enjoys hiking and healthy living.</p>
-        <a class="btn" href="https://wa.me/18705490483?text=Hello%2C%20I%20am%20interested%20in%20connecting%20on%20Lovella" target="_blank">💬 Chat Assistant</a>
-        <a class="whatsapp-btn" href="https://wa.me/18705490483?text=Hello%2C%20I%20saw%20Linda%27s%20profile%20on%20Lovella%20and%20would%20like%20to%20connect" target="_blank">📱 Chat on WhatsApp</a>
-      </div>
-
-      <div class="card" data-location="UK" data-age="54">
-        <img class="profile-pic" src="https://randomuser.me/api/portraits/women/71.jpg" alt="Margaret, UK" />
-        <div class="profile-name">Margaret</div>
-        <div class="profile-age">54 • Manchester, UK</div>
-        <p>Retired nurse, passionate about charity work.</p>
-        <a class="btn" href="https://wa.me/18705490483?text=Hello%2C%20I%20am%20interested%20in%20connecting%20on%20Lovella" target="_blank">💬 Chat Assistant</a>
-        <a class="whatsapp-btn" href="https://wa.me/18705490483?text=Hello%2C%20I%20saw%20Margaret%27s%20profile%20on%20Lovella%20and%20would%20like%20to%20connect" target="_blank">📱 Chat on WhatsApp</a>
-      </div>
-
-      <div class="card" data-location="China" data-age="49">
-        <img class="profile-pic" src="https://randomuser.me/api/portraits/women/67.jpg" alt="Mei, China" />
-        <div class="profile-name">Mei</div>
-        <div class="profile-age">49 • Shanghai, China</div>
-        <p>Businesswoman, loves fine dining and travel.</p>
-        <a class="btn" href="https://wa.me/18705490483?text=Hello%2C%20I%20am%20interested%20in%20connecting%20on%20Lovella" target="_blank">💬 Chat Assistant</a>
-        <a class="whatsapp-btn" href="https://wa.me/18705490483?text=Hello%2C%20I%20saw%20Mei%27s%20profile%20on%20Lovella%20and%20would%20like%20to%20connect" target="_blank">📱 Chat on WhatsApp</a>
-      </div>
-
-      <div class="card" data-location="USA" data-age="60">
-        <img class="profile-pic" src="https://randomuser.me/api/portraits/women/77.jpg" alt="Patricia, USA" />
-        <div class="profile-name">Patricia</div>
-        <div class="profile-age">60 • New York, USA</div>
-        <p>Writer, enjoys volunteering and classical music.</p>
-        <a class="btn" href="https://wa.me/18705490483?text=Hello%2C%20I%20am%20interested%20in%20connecting%20on%20Lovella" target="_blank">💬 Chat Assistant</a>
-        <a class="whatsapp-btn" href="https://wa.me/18705490483?text=Hello%2C%20I%20saw%20Patricia%27s%20profile%20on%20Lovella%20and%20would%20like%20to%20connect" target="_blank">📱 Chat on WhatsApp</a>
-      </div>
-
-    </div>
-  </section>
+  </main>
 
   <footer>
     <p>© <span id="year"></span> Lovella. All rights reserved.</p>
   </footer>
 
   <script>
-    document.getElementById("year").textContent = new Date().getFullYear();
+    document.getElementById('year').textContent = new Date().getFullYear();
   </script>
-
 </body>
 </html>
