@@ -1,81 +1,147 @@
-<!-- International Singles -->
-<section id="international">
-  <div class="container">
-    <h2>International Singles</h2>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Lovella — International Dating</title>
+  <meta name="description" content="Lovella is a modern dating platform founded in the USA, connecting men and women worldwide with trust, safety, and love." />
+  <style>
+    :root {
+      --bg:#1a0b17; --card:#241021; --muted:#d6b3c9; --text:#fff5f9; --brand:#ec4899; --brand-2:#f472b6;
+    }
+    body {margin:0;font:16px/1.6 system-ui, sans-serif;color:var(--text);background:var(--bg);}
+    .container{max-width:1100px;margin:auto;padding:24px}
+    h2{color:var(--brand);text-align:center}
+    .grid{display:grid;gap:20px}
+    .profiles{grid-template-columns:repeat(auto-fit,minmax(220px,1fr))}
+    .card{background:var(--card);padding:18px;border-radius:16px;text-align:center}
+    .profile-pic{width:100%;border-radius:14px;max-height:250px;object-fit:cover}
+    .profile-name{font-weight:700;margin-top:10px}
+    .profile-age{font-size:14px;color:var(--muted)}
+    .btn{display:inline-block;margin-top:10px;padding:10px 14px;border-radius:12px;font-weight:bold;text-decoration:none;color:#fff;background:linear-gradient(90deg,var(--brand),var(--brand-2))}
+    footer{padding:20px;text-align:center;color:var(--muted)}
+  </style>
+</head>
+<body>
+
+  <!-- Hero -->
+  <section class="hero container">
+    <h1 style="color:var(--brand)">❤️ Lovella International Dating</h1>
+    <p>Find love, companionship, and long-lasting relationships across borders. Trusted worldwide.</p>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="container">
+    <h2>About Lovella</h2>
+    <p>
+      Lovella is a trusted international dating organization founded in the United States with a mission to unite singles across the globe. Since its creation, Lovella has connected men and women from all walks of life, including African nations such as Kenya, Nigeria, South Africa, Ghana, and Uganda, with singles from Europe, the UK, and the United States. Our vision is simple: to create a secure and reliable platform where love knows no borders.
+    </p>
+    <p>
+      Through our easy-to-use platform, members can meet genuine singles looking for friendship, companionship, and marriage. Unlike casual dating apps, Lovella emphasizes authenticity and commitment. We provide 24/7 customer support through our Chat Assistant available on WhatsApp at <strong>+1 870 549 0483</strong> or by email, ensuring that every user feels supported throughout their journey. Our assistant helps members navigate the site, connect with matches, and process smooth payments at the lowest fees.
+    </p>
+    <p>
+      Lovella has grown to become a bridge for love between African singles and white men and women from Europe and the Americas. Many of our success stories include couples who met here, got married, and even relocated internationally. For example, several women from Kenya and Ghana have praised Lovella for helping them connect with loving partners from the United States and the United Kingdom, with visa and documentation processes made simple. Thanks to our partnership with trusted payment solutions such as PayPal and cryptocurrency, transactions are secure, fast, and convenient for all.
+    </p>
+    <p>
+      At Lovella, love truly has no boundaries. We invite you to join our family today, find your perfect match, and experience the joy of true connection with singles worldwide.
+    </p>
+  </section>
+
+  <!-- Profiles -->
+  <section id="profiles" class="container">
+    <h2>Meet Our Members</h2>
     <div class="grid profiles">
-      
-      <!-- Male 1 -->
-      <div class="card">
-        <img class="profile-pic" src="https://randomuser.me/api/portraits/men/47.jpg" alt="John" />
-        <div class="profile-name">John</div>
+
+      <div class="card" data-location="USA" data-age="47">
+        <img class="profile-pic" src="https://randomuser.me/api/portraits/men/65.jpg" alt="Robert, USA" />
+        <div class="profile-name">Robert</div>
         <div class="profile-age">47 • Texas, USA</div>
-        <p>Business consultant, loves outdoor adventures and traveling. Looking for a meaningful relationship.</p>
-        <a class="btn primary" href="https://wa.me/18705490483" target="_blank">Chat me on WhatsApp</a>
+        <p>Business owner, enjoys golf and family travel.</p>
+        <a class="btn" href="https://wa.me/18705490483" target="_blank">💬 Chat Assistant</a>
       </div>
 
-      <!-- Male 2 -->
-      <div class="card">
-        <img class="profile-pic" src="https://randomuser.me/api/portraits/men/55.jpg" alt="David" />
+      <div class="card" data-location="UK" data-age="52">
+        <img class="profile-pic" src="https://randomuser.me/api/portraits/men/71.jpg" alt="David, UK" />
         <div class="profile-name">David</div>
-        <div class="profile-age">55 • London, UK</div>
-        <p>Retired pilot, enjoys cooking and classical music. Seeking a caring partner for lifelong companionship.</p>
-        <a class="btn primary" href="https://wa.me/18705490483" target="_blank">Chat me on WhatsApp</a>
+        <div class="profile-age">52 • London, UK</div>
+        <p>Engineer, loves history, culture, and travel.</p>
+        <a class="btn" href="https://wa.me/18705490483" target="_blank">💬 Chat Assistant</a>
       </div>
 
-      <!-- Male 3 -->
-      <div class="card">
-        <img class="profile-pic" src="https://randomuser.me/api/portraits/men/62.jpg" alt="Wei" />
-        <div class="profile-name">Wei</div>
-        <div class="profile-age">62 • Beijing, China</div>
-        <p>Cultural historian who loves art and tea ceremonies. Looking to share wisdom and joy with a partner.</p>
-        <a class="btn primary" href="https://wa.me/18705490483" target="_blank">Chat me on WhatsApp</a>
+      <div class="card" data-location="China" data-age="58">
+        <img class="profile-pic" src="https://randomuser.me/api/portraits/men/67.jpg" alt="Chen, China" />
+        <div class="profile-name">Chen</div>
+        <div class="profile-age">58 • Beijing, China</div>
+        <p>Retired teacher, enjoys reading and cooking.</p>
+        <a class="btn" href="https://wa.me/18705490483" target="_blank">💬 Chat Assistant</a>
       </div>
 
-      <!-- Male 4 -->
-      <div class="card">
-        <img class="profile-pic" src="https://randomuser.me/api/portraits/men/68.jpg" alt="Richard" />
-        <div class="profile-name">Richard</div>
-        <div class="profile-age">68 • New York, USA</div>
-        <p>Philanthropist, passionate about mentoring and supporting communities. Ready for love in his golden years.</p>
-        <a class="btn primary" href="https://wa.me/18705490483" target="_blank">Chat me on WhatsApp</a>
+      <div class="card" data-location="USA" data-age="61">
+        <img class="profile-pic" src="https://randomuser.me/api/portraits/men/77.jpg" alt="James, USA" />
+        <div class="profile-name">James</div>
+        <div class="profile-age">61 • Florida, USA</div>
+        <p>Musician, loves the beach and outdoor lifestyle.</p>
+        <a class="btn" href="https://wa.me/18705490483" target="_blank">💬 Chat Assistant</a>
       </div>
 
-      <!-- Female 1 -->
-      <div class="card">
-        <img class="profile-pic" src="https://randomuser.me/api/portraits/women/52.jpg" alt="Mary" />
-        <div class="profile-name">Mary</div>
-        <div class="profile-age">52 • Manchester, UK</div>
-        <p>Writer and avid reader, enjoys gardening and family life. Looking for a true companion.</p>
-        <a class="btn primary" href="https://wa.me/18705490483" target="_blank">Chat me on WhatsApp</a>
-      </div>
-
-      <!-- Female 2 -->
-      <div class="card">
-        <img class="profile-pic" src="https://randomuser.me/api/portraits/women/60.jpg" alt="Linda" />
+      <div class="card" data-location="USA" data-age="46">
+        <img class="profile-pic" src="https://randomuser.me/api/portraits/women/65.jpg" alt="Linda, USA" />
         <div class="profile-name">Linda</div>
-        <div class="profile-age">60 • California, USA</div>
-        <p>Former teacher, loves traveling and volunteering. Seeking friendship that could blossom into love.</p>
-        <a class="btn primary" href="https://wa.me/18705490483" target="_blank">Chat me on WhatsApp</a>
+        <div class="profile-age">46 • California, USA</div>
+        <p>Artist, enjoys hiking and healthy living.</p>
+        <a class="btn" href="https://wa.me/18705490483" target="_blank">💬 Chat Assistant</a>
       </div>
 
-      <!-- Female 3 -->
-      <div class="card">
-        <img class="profile-pic" src="https://randomuser.me/api/portraits/women/65.jpg" alt="Zhang Mei" />
-        <div class="profile-name">Zhang Mei</div>
-        <div class="profile-age">65 • Shanghai, China</div>
-        <p>Artist who enjoys painting and nature walks. Ready to share her heart with a kind gentleman.</p>
-        <a class="btn primary" href="https://wa.me/18705490483" target="_blank">Chat me on WhatsApp</a>
+      <div class="card" data-location="UK" data-age="54">
+        <img class="profile-pic" src="https://randomuser.me/api/portraits/women/71.jpg" alt="Margaret, UK" />
+        <div class="profile-name">Margaret</div>
+        <div class="profile-age">54 • Manchester, UK</div>
+        <p>Retired nurse, passionate about charity work.</p>
+        <a class="btn" href="https://wa.me/18705490483" target="_blank">💬 Chat Assistant</a>
       </div>
 
-      <!-- Female 4 -->
-      <div class="card">
-        <img class="profile-pic" src="https://randomuser.me/api/portraits/women/70.jpg" alt="Elizabeth" />
-        <div class="profile-name">Elizabeth</div>
-        <div class="profile-age">70 • Florida, USA</div>
-        <p>Retired nurse, loves family gatherings and travel. Believes in second chances at love.</p>
-        <a class="btn primary" href="https://wa.me/18705490483" target="_blank">Chat me on WhatsApp</a>
+      <div class="card" data-location="China" data-age="49">
+        <img class="profile-pic" src="https://randomuser.me/api/portraits/women/67.jpg" alt="Mei, China" />
+        <div class="profile-name">Mei</div>
+        <div class="profile-age">49 • Shanghai, China</div>
+        <p>Businesswoman, loves fine dining and travel.</p>
+        <a class="btn" href="https://wa.me/18705490483" target="_blank">💬 Chat Assistant</a>
       </div>
 
+      <div class="card" data-location="USA" data-age="60">
+        <img class="profile-pic" src="https://randomuser.me/api/portraits/women/77.jpg" alt="Patricia, USA" />
+        <div class="profile-name">Patricia</div>
+        <div class="profile-age">60 • New York, USA</div>
+        <p>Writer, enjoys volunteering and classical music.</p>
+        <a class="btn" href="https://wa.me/18705490483" target="_blank">💬 Chat Assistant</a>
+      </div>
     </div>
-  </div>
-</section>
+  </section>
+
+  <!-- Feedback -->
+  <section id="feedback" class="container">
+    <h2>User Feedback</h2>
+    <div class="grid" style="grid-template-columns:repeat(auto-fit,minmax(280px,1fr))">
+      <div class="card"><p>“Lovella is the best! I met my husband here and we are now happily married in Texas.” — Mary, USA (+1)</p></div>
+      <div class="card"><p>“I thank the assistant manager on WhatsApp for guiding me with patience.” — Daniel, Kenya (+254)</p></div>
+      <div class="card"><p>“The management is genuine, I met a white partner who processed my visa easily.” — Alice, South Africa (+27)</p></div>
+      <div class="card"><p>“Safe, real, and honest. Lovella is far better than apps I tried before.” — Zhang, China (+86)</p></div>
+      <div class="card"><p>“Payment was so smooth with PayPal. I love Lovella.” — Grace, UK (+44)</p></div>
+      <div class="card"><p>“Crypto payments are fast and secure. Thanks to Lovella.” — Ahmed, UAE (+971)</p></div>
+      <div class="card"><p>“The Chat Assistant is very helpful, connected me to the right person.” — John, USA (+1)</p></div>
+      <div class="card"><p>“I found true love after years of searching. Thank you Lovella.” — Esther, Nigeria (+234)</p></div>
+      <div class="card"><p>“I’m grateful to management, they connected me with my soulmate.” — Priya, India (+91)</p></div>
+      <div class="card"><p>“I moved to the USA after meeting my husband here. Lovella is real!” — Rose, Ghana (+233)</p></div>
+    </div>
+  </section>
+
+  <footer>
+    <p>© <span id="year"></span> Lovella. All rights reserved.</p>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+
+</body>
+</html>
